@@ -1,0 +1,188 @@
+/* Navigation */
+
+#navBar {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 5%;
+  align-items: center;
+  justify-content:space-between;
+}
+
+#navigation {
+  display: flex;
+  width: 350px;
+}
+
+#navigation p {
+  cursor: pointer;
+  text-decoration: none;
+  width: 100%;
+}
+
+
+
+/* Hero Grid */
+
+#heroGrid {
+  margin: 0px 5%;
+  height: 500px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-rows: 1,;
+  grid-template-columns: 1;
+  grid-template-areas:
+  "featuredProduct";
+}
+
+#featuredProduct {
+  grid-area: featuredProduct;
+  background-color: rgb(185, 185, 185);
+  border-radius: 4px;
+}
+
+#headline {
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 4px;
+  position: absolute;
+  padding: 25px;
+  margin-left: 150px;
+}
+
+.heroGridArea {
+  background-position: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+
+
+/* Projects Grid */
+
+#projectsGrid {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "pr1"
+  "pr2"
+  "pr3";
+}
+
+#pr1 {
+  grid-area: pr1;
+  background-color: rgb(185, 185, 185);
+  border-radius: 4px;
+}
+
+#pr2 {
+  grid-area: pr2;
+  background-color: rgb(185, 185, 185);
+  border-radius: 4px;
+}
+
+#pr3 {
+  grid-area: pr3;
+  background-color: rgb(185, 185, 185);
+  border-radius: 4px;
+}
+
+.projectsGridArea {
+  margin: 5px;
+  cursor: pointer;
+}
+
+.heading {
+  padding: 65px;
+  height: 50px;
+  color: white;
+  font-size: 18px;
+}
+
+
+
+/* Design Grid*/
+
+#designGrid {
+  margin: 0px 5%;
+  margin-top: 50px;
+  display: grid;
+  align-content: space-between;
+  grid-template-rows: 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "de1 de2 de3"
+}
+
+#de1 {
+  grid-area: de1;
+  background-color: rgb(185, 185, 185);
+  border-radius: 4px;
+  width: 300px;
+}
+
+#de2 {
+  grid-area: de2;
+  background-color: rgb(185, 185, 185);
+  border-radius: 4px;
+  width: 300px;
+}
+
+#de3 {
+  grid-area: de3;
+  background-color: rgb(185, 185, 185);
+  border-radius: 4px;
+  width: 300px;
+}
+
+.deHeading {
+  padding: 65px;
+  height: 50px;
+  color: white;
+  font-size: 18px;
+}
+
+.designGridArea {
+  margin: auto;
+  cursor: pointer;
+}
+
+
+
+/* Footer */
+
+#footer {
+  background-color: black;
+  height: 100px;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+}
+
+
+
+/* Typography */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  font-size: 50px;
+  margin: 0px 0px;
+  color: #000000;
+}
+
+h3 {
+  color: white;
+  font-size: 18px;
+}
+
+#headline p {
+  max-width: 350px;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0px 0px;
+  color: #636364;
+}
