@@ -174,9 +174,8 @@ h2 {
   color: #000000;
 }
 
-h3 {
+h4 {
   color: white;
-  font-size: 18px;
 }
 
 #headline p {
@@ -186,3 +185,80 @@ h3 {
   margin: 0px 0px;
   color: #636364;
 }
+
+/* About Page CSS */
+
+.flexItem {
+  background-color: rgb(26, 26, 26);
+  margin: 10px;
+  padding: 10px;
+  width: 400px;
+  height: 300px;
+  border-radius: 4px;
+}
+.flexItem2 {
+  background-color: rgb(26, 26, 26);
+  margin: 10px;
+  padding: 10px;
+  width: 85%;
+  height: 300px;
+  border-radius: 4px;
+}
+.flexContainer {
+  display: flex;
+  height: 400px;
+  background-color: rgb(185, 185, 185);
+  margin: 5%;
+  padding: 10px;
+  border-radius: 4px;
+}
+.justifyContent {
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+}
+
+.alignItems {
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+
+
+
+
+/* Media Query */
+
+@media only screen and (max-width: 1000px) {
+  #navigation {
+    display: none;
+  }
+
+@media only screen and (max-width: 600px) {
+
+    #headline {
+      position: static;
+      margin: 20px;
+    }
+
+    #heroGrid {
+      position: static;
+      }
+
+    #projectsGrid {
+      grid-template-rows: 150px 150px 150px;
+      grid-template-columns: 1fr;
+      grid-template-areas: "pr1"
+      "pr2"
+      "pr3";
+    }
+
+    #designGrid {
+      grid-template-rows: 150px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "de1" "d2"
+      "d3";
+    }
+
+  }
